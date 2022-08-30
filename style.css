@@ -1,0 +1,415 @@
+header{
+    width: 100vw;
+    height: 80px;
+    background: rgb(250,0,80);
+    margin: 0 auto;
+}
+/* 헤더의 내용을 가운데 정렬로 맞추기 위한 코딩 */
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* 로고 이미지 */
+.content .logo{
+    background: url(yogiimg/logo.PNG) no-repeat;
+    width: 100px;
+    height: 37px;
+    margin: 20px 0;
+    float: left;
+    position: relative;
+}
+/* 로고이미지의 a태그에 대해서 */
+.logo .logoclick{
+    width: 100px;
+    height: 37px;
+    position: absolute;
+}
+/* 로그인 버튼 form태그 */
+.login-form{
+    width: 150px;
+    height: 40px;
+    border: 1px solid rgb(247, 203, 61,0.5);
+    margin: 20px 10px 0;
+    float: right;
+    border-radius: 3px;
+}
+/* 로그인 버튼 구현 */
+.login{
+    width: 146px;
+    background: none;
+    height: 36px;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+/* 로그인 버튼 위에 마우스를 올리면 터서가 포인터모양으로 변함 */
+.login:hover{
+    cursor: pointer;
+}
+/* 로그인 버튼을 클릭하는 순간 테두리 생성 */
+.login:active{
+    border: 2px solid #000;
+}
+.login-form:active{
+    border: 2px solid #fff;
+}
+
+/* 배너 이미지 삽입 */
+.banner{
+    width: 100%;
+    height: 238px;
+    background: url(yogiimg/banner.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+/* 배너 안의 내용들 가운데 정렬 */
+.banner-content{
+    width: 500px;
+    margin: 0 auto;
+}
+/* 배너 안의 글씨 설정 */
+.banner-content .text1{
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+}
+.span1{
+    color: rgb(255,181,0);
+}
+.banner-content .text2{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+/* 주소 위치 버튼 */
+.address-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 10px 0 20px;
+    background: #fff url(yogiimg/add1.png) no-repeat;
+    background-position: center;
+    display: block;
+    float: left;
+    position: relative;
+}
+/* 주소 위치 버튼 안의 a태그 구현 */
+.address-btn .check{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+}
+/* a태그 클릭시 테두리 생성 */
+.check:active{
+    border:2px solid #000;
+}
+.address-btn:active{
+    border: 2px solid #fff;
+}
+/* input을 감싸고 있는 div태그 */
+.address-input{
+    position: relative;
+    width: 300px;
+    height: 45px;
+    display: inline-block;
+    float: left;
+}
+/* 주소를 입력받는 input태그 구현 */
+.address-input input[type="text"]{
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    padding: 5px;
+    margin-top: 10px;
+    position: relative;
+}
+/* input태그의 형제 요소인 input-box 구현, input에 focus되지 않으면 안보이게 처리 */
+input[type="text"] ~ .input-box{
+    width: 360px;
+    height: 40px;
+    background: #fff;
+    position: absolute;
+    top: 120%;
+    border-radius: 5px;
+    display: none;
+    font-size: 14px;
+    padding: 10px;
+}
+/* input태그가 focus됐을 때 형제 요소인 input박스가 보이도록 처리 */
+input[type="text"]:focus ~ .input-box{
+    display: block;
+}
+/* input안에 있는 x버튼 구현, input에 포커스 되어 있지 않으면 안보이게 처리 */
+.address-input .xbtn{
+    position: absolute;
+    top: 30px;
+    right: 2px;
+    color: rgb(250,0,80);
+    transform: translateY(-50%);
+    padding: 7px;
+    border-radius: 5px;
+    display: none;
+}
+/* input태그가 focus됐을 때 형제 요소가 보이도록 처리 */
+.address-input input[type="text"]:focus ~ .xbtn{
+    display: block;
+}
+/* 클릭시 테두리 생성 */
+.xbtn:active{
+    border: 2px solid black;
+    display: block;
+}
+/* input 태그 옆에 있는 검색 박스 */
+.search{
+    width: 60px;
+    height: 40px;
+    background: rgb(255,138,0);
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 0 5px 5px 0;
+}
+.search-btn{
+    width: 56px;
+    height: 36px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+}
+.search-btn:active{
+border: 2px solid black;
+}
+.search:active{
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+/* 각 메뉴 상자들을 가운데 정렬 */
+section{
+    width: 1000px;
+    margin: 0 auto;
+    height: 950px;
+}
+/* 각 메뉴 상자의 공통적인 속성 설정 */
+.artimg{
+    width: 24%;
+    height: 220px;
+    float: left;
+    margin: 5px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+/* 메뉴 상자의 백그라운드 이미지 삽입 */
+.article1{
+    background: url(yogiimg/001.png) no-repeat;
+    background-position: 100% 100%;
+    background-size: 100% 220px;
+}
+
+.article2{
+    background: #fff url(yogiimg/002.png) no-repeat;
+    background-position: 100% 100%;
+}
+.article3{
+    background: #fff url(yogiimg/003.png) no-repeat;
+    background-position: 100% 100%;
+}
+.article4{
+    background: #fff url(yogiimg/004.png) no-repeat;
+    background-position: 100% 100%;
+}
+.article5{
+    background: #fff url(yogiimg/005.png) no-repeat;
+    background-position: 100% 100%;
+}
+.article6{
+    background: #fff url(yogiimg/006.png) no-repeat;
+    background-position: 100% 100%;
+}
+.article7{
+    background: #fff url(yogiimg/007.png) no-repeat;
+    background-position: 100% 100%;
+}
+.article8{
+    background: #fff url(yogiimg/008.png) no-repeat;
+    background-position: 100% 100%;
+}
+.article9{
+    background: #fff url(yogiimg/009.png) no-repeat;
+    background-position: 100% 100%;
+}
+.article10{
+    background: #fff url(yogiimg/010.png) no-repeat;
+    background-position: 100% 100%;
+}
+.article11{
+    background: #fff url(yogiimg/011.png) no-repeat;
+    background-position: 100% 100%;
+}
+.article12{
+    background: #fff url(yogiimg/012.png) no-repeat;
+    background-position: 100% 100%;
+}
+.article13{
+    background: #fff url(yogiimg/013.png) no-repeat;
+    background-position: 100% 100%;
+}
+.article14{
+    background: #fff url(yogiimg/014.png) no-repeat;
+    background-position: 100% 100%;
+}
+/* 각 상자들의 a태그 */
+.art1{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    color: #000;
+    font-weight: 600;
+}
+.art1>i{
+    color: rgb(250,0,80);
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    font-size: 15px;
+}
+/* 이용약관 메뉴들 가운데 정렬 */
+.menu{
+    clear: both;
+    width: 1000px;
+    margin: 0 auto;
+    height: 40px;
+}
+/* 이용약관 메뉴들 왼쪽으로 배치 */
+.menu ul{
+float: left;
+height: 40px;
+}
+.menu ul li{
+    float: left;
+    margin: 10px 20px 10px 0;
+}
+/* 페이스북과 블로그 이미지 크기 조정 */
+.img1{
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin-right: 5px;
+}
+/* 페이스북 블로그 a태그에 있는 글씨 설정 */
+.font{
+    display: inline-block;
+    padding: 10px;
+    float: right;
+    font-size: 12px;
+    color: #999;
+}
+/* 이용약관 메뉴에 있는 글씨 설정 */
+.menu-a{
+    color: #999;
+    font-size: 12px;
+}
+.menu-a1{
+    color: #777;
+    font-weight: 600;
+}
+.span2{
+    margin-left: 20px;
+    color: #999;
+}
+/* 메뉴 위 아래 수평선 생성 */
+.line{
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+}
+/* 푸터부분 */
+footer{
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+}
+/* 푸터 왼쪽에 요기요 작은 로고 */
+.small-logo{
+    width: 15%;
+    height: 300px;
+    float: left;
+}
+.small-logo>a{
+    display: inline-block;
+    margin: 30px 0 0 20px;
+    float: left;
+}
+.text{
+    width: 85%;
+    float: right;
+}
+h1{
+    font-size: 15px;
+    margin: 30px 0 10px 0;
+}
+p{
+    font-size: 12px;
+}
+.footer-a{
+    color: #aaa;
+    padding: 2px 6px;
+    border: 1px solid #aaa;
+}
+.footer-a>i{
+    color: #aaa;
+    font-size: 5px;
+}
+.email-a{
+    color: #aaa;
+}
+.footer-center{
+    width: 85%;
+    margin-top: 40px;
+    height: 50px;
+    float: right;
+}
+.footer-img .text-img{
+    float: left;
+    margin-right: 5px;
+}
+.footer-img{
+    width: 130px;
+    display: inline-block;
+    font-size: 12px;
+    color: #888;
+    float: left;
+}
+h2{
+    font-size: 20px;
+    font-weight: 600;
+    float: left;
+    line-height: 50px;
+    margin:0 10px;
+    color: #555;
+}
+h2~p{
+    line-height: 50px;
+}
+.footer-end{
+    float: right;
+    margin-top: 25px;
+    width: 85%;
+    color: #aaa;
+    line-height: 18px;
+}
+
+
