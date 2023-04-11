@@ -12,7 +12,7 @@
 ---
 ## 결과
 
-- :pencil2:photoshop으로 구조 디자인
+- :pencil2:**photoshop**으로 구조 디자인
 ![요기요 웹사이트](https://user-images.githubusercontent.com/91234758/231077555-5f4badd4-11ad-4767-8342-92e646ff8a94.png)
 
 - HTML과 CSS로 사이트의 구조 잡는 연습
