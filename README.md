@@ -1,4 +1,4 @@
-# yogiyo 사이트 HTML 구조 연습
+# yogiyo 사이트 UI 디자인
 
 ## 결과
 
